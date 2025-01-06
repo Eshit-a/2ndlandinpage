@@ -1,0 +1,249 @@
+/* General Styles */
+body, ul, li, a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: rgba(255, 255, 255, 1);
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* Meta Viewport for Mobile */
+@media (max-width: 480px) {
+  body {
+    font-size: 90%; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Header Styles */
+.header {
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 1);
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: ;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+.company-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.tagline {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color:rgba(36, 36, 46, 1);
+  font-weight: 500;
+}
+
+.nav-links .dropdown {
+  position: relative;
+}
+
+.nav-links .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  list-style: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.nav-links .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.nav-links .dropdown-menu li {
+  margin: 5px 0;
+}
+
+.nav-links .dropdown-menu a {
+  color: #333;
+  text-decoration: none;
+}
+
+.contact-button {
+  background-color: #ED1C24;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.contact-button:hover {
+  background-color: #cc0000;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background-color: #333;
+  border-radius: 2px;
+}
+
+@media (max-width: 1024px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 10px;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* Second Section Styles */
+.second-section {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background-image: url('power-plant-industrial-estate-twilight-natural-gas-combined-cycle-power-plant-turbine-generator-energy-power-plant-industrial-refinery-oil-gas-twilight-supply-electricity\ 1.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.second-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(36, 36, 46, 0.7); /* Overlay */
+}
+
+.second-section h1 {
+  position: relative;
+  color: #fff;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 768px) {
+  .second-section h1 {
+    font-size: 2rem;
+  }
+}
+
+.hover-effect {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.second-section h1:hover {
+  transform: scale(1.05);
+  color: #f44336;
+}
+
+/* Responsive Design for All Sections */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .about-image img {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .third-section .stat {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vision-section {
+    flex-direction: column;
+  }
+
+  .vision-content {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .contact-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .hamburger span {
+    height: 2px;
+    width: 20px;
+  }
+}

@@ -1,0 +1,494 @@
+/* General Styles */
+body, ul, li, a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  
+  margin: 0;
+  color: rgba(255, 255, 255, 1);
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.company-name {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.tagline {
+  font-size: 12px;
+  color: #666;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-links .dropdown {
+  position: relative;
+}
+
+.nav-links .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  list-style: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.nav-links .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.nav-links .dropdown-menu li {
+  margin: 5px 0;
+}
+
+.nav-links .dropdown-menu a {
+  color: #333;
+  text-decoration: none;
+}
+
+.contact-button {
+  background-color: #ED1C24;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.contact-button:hover {
+  background-color: #cc0000;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background-color: #333;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 10px;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* Second Section Styles */
+.second-section {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background-image: url('power-plant-industrial-estate-twilight-natural-gas-combined-cycle-power-plant-turbine-generator-energy-power-plant-industrial-refinery-oil-gas-twilight-supply-electricity\ 1.png'); 
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.second-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #24242EB2 70%; /* Overlay */
+}
+
+.second-section h1 {
+  position: relative;
+  color: #fff;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6); /* Added text shadow to improve visibility */
+}
+
+@media (max-width: 768px) {
+  .second-section h1 {
+    font-size: 2rem;
+  }
+}
+
+.hover-effect {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.second-section h1:hover {
+  transform: scale(1.05);
+  color: #f44336;
+}
+
+/* Third Section Styles */
+.third-section-body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+#about-heading{
+  color: rgba(36, 36, 46, 1);
+
+}
+#about-paragraph1{ color: rgba(36, 36, 46, 1);
+  text-align:left ;
+}
+#about-paragraph2{ color: rgba(36, 36, 46, 1);
+  text-align: left;
+}
+.stat{
+  border: 2px solid rgba(255, 255, 255, 1);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 2%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1) ;
+  color: rgba(0, 0, 0, 1);
+}
+.about-text {
+  flex: 1;
+  padding: 20px;
+  color: rgba(36, 36, 46, 1);
+}
+.about-text h1{
+  color: rgba(237, 28, 36, 1);
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-text h1 {
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 1);
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.about-image {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0%;
+}
+
+.about-image img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 1 10px;
+  z-index: 2;
+}
+#projects-description img{
+  margin-top: 0%;
+}
+#main-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 1 10px;
+  z-index: 2; /* Make sure the main image is on top */
+}
+
+#bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('Mask group (1).jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5; /* Adjust opacity to make it blend with the main image */
+  z-index: 1; /* Put the background image behind the main image */
+}
+
+.project-stat {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 20px;
+
+}
+
+
+.third-section .stats {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 20px;
+}
+.third-section .stat {
+ margin: 10px;
+  flex: 1;
+}
+
+.third-section .stat h3 {
+  font-size: 1.5rem;
+  color:rgba(0, 0, 0, 1);
+  margin-bottom: 5px;
+}
+
+.third-section .stat p {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.third-section .stat img{
+  width: 24px;
+  height: 24px;
+  margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .third-section .stats {
+    flex-direction: column;
+  }
+  .third-section .stat{
+    margin-bottom: 20px;
+  }
+}
+
+/* Fourth Section Styles */
+
+#mission-section{
+  background-color: rgba(36, 36, 46, 1) ;
+}
+.mission-section .container{
+ color: #24242E;
+}
+.mission {
+  max-width: 50%;
+  
+  
+}
+
+.mission h1 {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+.mission p {
+  margin: 10px 0;
+}
+
+.image {
+  max-width: 45%;
+
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  border-radius: 0px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mission, .image {
+    max-width: 100%;
+  }
+
+  .image img {
+    margin-top: 20px;
+  }
+}
+/* Fifth Section Styles */
+.vision-section body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.vision-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+.vision-image{
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+.vision-image img {
+  width: 100%;
+  /*max-width: 500px;*/
+  height: 100%;
+  transition: opacity 0.3s ease;
+  object-fit: cover;
+}
+.text-overlay {
+  position: absolute; /* Position the text relative to the container */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for exact centering */
+  color: white; /* Text color */
+  font-size: 16px; /* Adjust text size */
+  text-align: center; /* Center the text */
+ color: #FFFFFF;
+  padding: 10px; /* Optional: Add padding around the text */
+  font-family: "Proxima Nova", sans-serif;
+}
+.vision-image img:hover {
+  opacity: 0.8;
+}
+
+.vision-content {
+  padding: 20px;
+  max-width: 500px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.vision-content.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.vision-title {
+  color:#ED1C24;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.vision-subtitle {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #24242E;
+}
+
+.vision-text {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #24242E;
+}
+
+.additional-text {
+  display: none;
+  color: #FFFFFF;
+}
+
+.more-text-button {
+  display: block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .vision-section {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .vision-content {
+      text-align: center;
+  }
+}
